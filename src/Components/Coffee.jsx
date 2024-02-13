@@ -20,10 +20,6 @@ const Coffee = ({ coffee, coffees, setCoffees }) => {
       if (result.isConfirmed) {
         fetch(`http://localhost:5000/coffees/${_id}`, {
           method: "DELETE",
-          // headers: {
-          //     'content-type': 'application/json'
-          // },
-          // body : JSON.stringify()
         })
           .then((res) => res.json())
           .then((data) => {
